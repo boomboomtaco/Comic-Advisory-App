@@ -1,11 +1,14 @@
 $(function(){
 	var printList = $('#print-reading-list');
-		signedIn = $('#signed-in-display'); 
+		signedIn = $('#signed-in'); 
+		signInForm = $('#sign-in-form');
+		LogInDropDown = $('#login-dropdown');
 	printList.hide();
 	signedIn.hide();
 	$('#sign-in-btn').on( 'click', function(){
 		printList.show();
-		signedIn.show(); 
-		$('#sign-in-form').hide();
+		signedIn.alert(); 
+		signInForm.hide();
+		LogInDropDown.hide();
 		}); 
 });

@@ -35,7 +35,8 @@ find the code for a working prototype. send any questions or comments to kline.a
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- header bar-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -44,58 +45,72 @@ find the code for a working prototype. send any questions or comments to kline.a
             <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#">Comic Advisory Application</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <!-- !!if needed...!!
-			  <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li> -->
-              <li class="dropdown" id="print-reading-list">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Print Reading List <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="nav-header">PDF Reading List</li>
-                  <li><a href="#">Download</a></li>
-                </ul>
-              </li>
-            </ul>
-			<div class="text-right" id="signed-in">
-				<p class="text-success" id="signed-in-display"><strong>Signed in as... User X</strong></p>
-			</div>
-            <form class="navbar-form pull-right" id="sign-in-form">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn" id="sign-in-btn">Sign in</button>
-            </form>
-          </div><!--/.nav-collapse -->
+          <div class="nav-collapse collapse"><!--responsive web collapse-->
+            <ul class="span6 nav">
+				<form class="navbar-search pull-right"><!--searchbar pulled to left of middle section-->
+					<input type="text" class="search-query" placeholder="Search">
+				</form>
+			</ul>
+			<ul class="nav pull-right"><!--login/etc section pulled to right-->
+				<li class="dropdown" id="login-dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login / Create Account</a>
+						<ul class="span4 dropdown-menu">
+							<form class="span3 navbar-form" id="sign-in-form">
+								<input class="span3" type="text" placeholder="Email">
+								<input class="span3" type="password" placeholder="Password">
+								<button type="submit" class="btn" id="sign-in-btn">Sign in</button>
+							</form>
+						</ul>
+				<li class="dropdown" id="print-reading-list"><!--this only appears after user has logged in-->
+					<a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown">Print Reading List <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="nav-header">PDF Reading List</li>
+							<li><a href="#">Download</a></li>
+						</ul>
+				</li>
+				</li>
+				<div class="alert" data-dismiss="alert"" id="signed-in"><!--pop out alert notifies user that they successfully logged in-->
+					<p class="text-success"  id="signed-in-display"><strong>Signed in as... User X</strong></p>
+				</div>
+				<span class="add-on pull-right"><button class="btn btn-mini" style="vertical-align: middle"><i class="icon-cog"> </i></button></span><!--will be clickable cog icon for user settings-->
+			</ul>
+            
+
+
+			
+			
+			 
+          </div><!--/.nav-collapse -->  		
         </div>
+
       </div>
     </div>
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
+      <!-- Call to Action for Discovery  -->
       <div class="hero-unit">
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
       </div>
 
-      <!-- Example row of columns -->
+      <!-- Featured Content to be filled out during development  -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
+          <h2>Featured Content</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
+          <h2>Featured Content</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
+          <h2>Featured Content</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
         </div>
       </div>
 
