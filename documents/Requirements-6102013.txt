@@ -1,0 +1,31 @@
+﻿Comic Advisory App Requirements -- 6/10/2013
+
+
+Problem Statement: 
+
+
+1. Problem: Newcomers to Comic / Graphic Novel genre, often have problems discovering where to start, or find specific content to begin reading. Previously comic readers would go to comic stores and get advice on what to read. With the increasing popularity of digital books, newcomers often turn to the web to get pointed in the right direction. Our application will address this problem and direct new readers to the proper sources. 
+2. Further Definition of Solution: Using input from new readers, veteran readers and information professionals we are developing an application that will aide all mentioned parties in a successful reader’s advisory experience. Our goal is not to encourage new and veteran readers to seek out sources via pirating or solely purchasing new materials but also encourage borrowing materials from public libraries when available.  
+
+
+Goals: 
+
+
+1. User needs to efficiently interact with the application to meet any goals set by inquiring new information.
+2. The app should be able to display useful information to new and existing users.
+3. The app should be enjoyable to use and not confusing.
+4. The app should be well structured and designed to fulfill these goals. 
+5. This app should be able to prove usefulness to users over a period of time, not just a one time use app.
+6. This app will use bootstrap to eliminate excessive work for responsive web, alleviating the need for an additional iOS/Android application. 
+7. This app will utilize Comic Vine’s API and Goodreads integration to enable an information rich application. 
+
+
+Tasks: (revisit later with technical logistics)
+
+
+1. View by genre or publisher, etc.
+2. Search function 
+3. Navigate through a ‘tree’ structure to discover content
+4. View titles in Goodreads
+5. View further info on Comic Vine
+6. Save / print a list of ‘starred’ content
