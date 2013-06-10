@@ -1,12 +1,12 @@
 $(function(){
-	var printList = $('#print-reading-list');
+	var userInformation = $('#user-information');
 		signedIn = $('#signed-in'); 
 		signInForm = $('#sign-in-form');
 		LogInDropDown = $('#login-dropdown');
-	printList.hide();
+	userInformation.hide();
 	signedIn.hide();
 	$('#sign-in-btn').on( 'click', function(){
-		printList.show();
+		userInformation.show();
 		signedIn.alert(); 
 		signInForm.hide();
 		LogInDropDown.hide();

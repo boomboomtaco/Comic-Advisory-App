@@ -46,11 +46,12 @@ find the code for a working prototype. send any questions or comments to kline.a
           </button>
           <a class="brand" href="#">Comic Advisory Application</a>
           <div class="nav-collapse collapse"><!--responsive web collapse-->
-            <ul class="span6 nav">
+            <ul class="span3 nav">
 				<form class="navbar-search pull-right"><!--searchbar pulled to left of middle section-->
 					<input type="text" class="search-query" placeholder="Search">
 				</form>
 			</ul>
+			
 			<ul class="nav pull-right"><!--login/etc section pulled to right-->
 				<li class="dropdown" id="login-dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login / Create Account</a>
@@ -61,18 +62,20 @@ find the code for a working prototype. send any questions or comments to kline.a
 								<button type="submit" class="btn" id="sign-in-btn">Sign in</button>
 							</form>
 						</ul>
-				<li class="dropdown" id="print-reading-list"><!--this only appears after user has logged in-->
-					<a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown">Print Reading List <b class="caret"></b></a>
+				</li>
+				
+				<div class="btn-group pull-right" id="user-information"><!-- user is logged in, this drop down provides access to account logout and printable pdf -->
+					<a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> user@gmail.com</a>
+					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="nav-header">PDF Reading List</li>
-							<li><a href="#">Download</a></li>
+							<li class="nav-header">Reading List</li>
+							<li><a href="#">Download PDF</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign Out</a></li><!-- need to add signout id, and link up to scripts.js-->
 						</ul>
-				</li>
-				</li>
-				<div class="alert" data-dismiss="alert"" id="signed-in"><!--pop out alert notifies user that they successfully logged in-->
-					<p class="text-success"  id="signed-in-display"><strong>Signed in as... User X</strong></p>
 				</div>
-				<span class="add-on pull-right"><button class="btn btn-mini" style="vertical-align: middle"><i class="icon-cog"> </i></button></span><!--will be clickable cog icon for user settings-->
+				
+		
 			</ul>
             
 
