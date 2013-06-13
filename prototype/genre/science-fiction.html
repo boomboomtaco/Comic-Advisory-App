@@ -11,14 +11,14 @@ find the code for a working prototype. send any questions or comments to kline.a
     <meta name="author" content="">
 
     <!-- styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 90px;
         padding-bottom: 0px;
       }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@ find the code for a working prototype. send any questions or comments to kline.a
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			<img class="span2" style="padding-bottom: 10px; padding-top: 10px;" src="img/thwack.png" />
+			<a href="../index.html"><img class="span2" style="padding-bottom: 10px; padding-top: 10px;" src="../img/thwack.png" /></a>
 			
         <!--responsive web collapse-->
 		<div class="nav-collapse collapse container-fluid span8 pull-right" style="padding: 15px">
@@ -98,14 +98,14 @@ find the code for a working prototype. send any questions or comments to kline.a
             <ul class="nav nav-list">
               <li class="nav-header"><a data-toggle="collapse" data-target="#genre-list">Genres</a></li>
               <ul class="collapse out demo" id="genre-list">
-	              <li class="active"><a href="genre/science-fiction.html">Science Fiction</a></li>
+	              <li class="active"><a href="science-fiction.html">Science Fiction</a></li>
 	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>
               </ul>
               <li class="nav-header"><a data-toggle="collapse" data-target="#era-list">Era / Time Period</a></li>
               <ul class="collapse out demo" id="era-list">
-	              <li class="active"><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>
@@ -141,38 +141,100 @@ find the code for a working prototype. send any questions or comments to kline.a
             <li class="nav-header"><a href="#">Help Fund or Contribute to this Project</a></li>
             <li class="nav-header">Follow us on Social Media</li>
           </div><!--/.well-->
-		  
-	</div><!--/span-->
+          
+         
+        
+          
+        </div><!--/span-->
     
 
-    <!-- Call to Action for Discovery  -->
+      <!-- Call to Action for Discovery  -->
+	  <!-- idea, when clicked, this div animates from span12, to span9- and reveals the side bar-->
       <div class="container-fluid span9">
 	  <div class="hero-unit">
-        <h1>Welcome, make yourself comfortable.</h1>
-        <p>This web application will assist new and veteran readers of comic book and graphic novel fiction, to explore & discover new titles. There will be an option to add items to a starred list, that will create a downloadable PDF that readers can take to the library or to comic book stores as a reference.</p>
-        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target=".demo">
-	        &laquo; Start Discovering
-	        </button>
+			<h1>Science Fiction...</h1>
+				<p>To boldly go, where no man, woman or feline has gone before.</p>
+				<p class="muted">This is a place holder for a description of the science fiction genre.<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend elit eu varius vehicula. Aliquam quis nibh in nisl pretium ullamcorper a eget ante. Vivamus dolor enim, egestas ac augue eget, dictum consectetur tortor. Vestibulum turpis metus, tincidunt ut faucibus eu, pulvinar sit amet justo. Mauris luctus sapien non tincidunt mollis. Nunc eu risus sem. Nam fermentum, mauris et bibendum lobortis, arcu nunc sagittis nisi, vel ornare orci nibh et velit. Quisque volutpat id nunc nec pretium. Nulla faucibus nisi vel pretium accumsan. Nullam aliquam massa sed massa ornare interdum. Donec a est non dolor placerat molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla eros, euismod eget semper eget, egestas id quam. Vivamus dictum neque nec risus aliquam, et bibendum eros rutrum. Morbi varius odio dolor, sit amet tempor lorem eleifend ac. Donec faucibus lorem eget nisl suscipit commodo.  </p>
+					<!-- labels with tooltips, and links-->
+					<a href="#"><span class="label label-success">Related Genre</span></a>
+					<a href="#"><span class="label label-success">Related Genre</span></a><br>
+					<a href="#"><span class="label label-warning">Related Era</span></a>
+					<a href="#"><span class="label label-warning">Related Era</span></a>
+					<a href="#"><span class="label label-warning">Related Era</span></a><br>
+					<a href="#"><span class="label label-important">Publisher</span></a>
+					<a href="#"><span class="label label-important">Publisher</span></a><br>
+					<a href="#"><span class="label label-info">Hero</span></a>
+					<a href="#"><span class="label label-info">Hero</span></a>
+					<a href="#"><span class="label label-info">Hero</span></a>
+					<a href="#"><span class="label label-info">Hero</span></a>
+			<hr>
+				<!-- add in some API information for popular titles for view of reviews, comic vine wiki, worldcat etc. -->
+				
+					<div class="row-fluid">
+						
+						<ul class="thumbnails">
+							<li class="span4">
+								<div class="thumbnail">
+									<img src="../img/300x200.gif" alt="">
+								<div class="caption">
+									<h3>Popular Title</h3>
+									<p>This is a placeholder for an image and content for popular titles in this genre.</p>
+										<div class="dropdown">
+										<a href="#" class="btn"><i class="icon-star-empty"></i> Add to List</a> <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li class="nav-header"><small>Open In..</small></li>
+												<li><a href="#"><small>Comic Vine</small></a></li>
+												<li><a href="#"><small>Goodreads</small></a></li>
+												<li><a href="#"><small>World Cat</small></a></li>
+											</ul>
+										</div>
+							  </div>
+							</div>
+						  </li>
+						  <li class="span4">
+							<div class="thumbnail">
+							 <img src="../img/300x200.gif" alt="">
+							  <div class="caption">
+								<h3>Popular Title</h3>
+								<p>This is a placeholder for an image and content for popular titles in this genre.</p>
+									<div class="dropdown">
+										<a href="#" class="btn"><i class="icon-star-empty"></i> Add to List</a> <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li class="nav-header"><small>Open In..</small></li>
+												<li><a href="#"><small>Comic Vine</small></a></li>
+												<li><a href="#"><small>Goodreads</small></a></li>
+												<li><a href="#"><small>World Cat</small></a></li>
+											</ul>
+										</div>
+							  </div>
+							</div>
+						  </li>
+						  <li class="span4">
+							<div class="thumbnail">
+							  <img src="../img/300x200.gif" alt="">
+							  <div class="caption">
+								<h3>Popular Title</h3>
+								<p>This is a placeholder for an image and content for popular titles in this genre.</p>
+									<div class="dropdown">
+										<a href="#" class="btn"><i class="icon-star-empty"></i> Add to List</a> <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li class="nav-header"><small>Open In..</small></li>
+												<li><a href="#"><small>Comic Vine</small></a></li>
+												<li><a href="#"><small>Goodreads</small></a></li>
+												<li><a href="#"><small>World Cat</small></a></li>
+											</ul>
+										</div>
+							  </div>
+							</div>
+						  </li>
+						</ul>
+					  </div>
+
+		
       </div>
 
-      <!-- Featured Content to be filled out during development  -->
-      <div class="row span11">
-        <div class="span4">
-          <h2>Featured Genre</h2>
-          <p>This is a placeholder for a featured genre, in this div, there would be a thumbnail and some basic information about the article, it would be randomly generated by json and jquery. </p>
-          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Featured Hero</h2>
-          <p>This is a placeholder for a featured hero or title, in this div, there would be a thumbnail and some basic information about the article, it would be randomly generated by json and jquery.  </p>
-          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Featured Article</h2>
-          <p>This is a placeholder for a featured article from an outside source possible Comic Vine , in this div, there would be a thumbnail and some basic information about the article, it would be randomly generated by json and jquery. </p>
-          <p><a class="btn" href="#">Explore Further &raquo;</a></p>
-        </div>
-      </div>
+      
 	  </div>
 
       <hr>
@@ -210,19 +272,19 @@ find the code for a working prototype. send any questions or comments to kline.a
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-	<script src="js/scripts.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+	<script src="../js/scripts.js"></script>
 
   </body>
 </html>
