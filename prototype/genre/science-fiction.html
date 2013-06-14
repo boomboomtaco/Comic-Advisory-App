@@ -22,7 +22,7 @@ find the code for a working prototype. send any questions or comments to kline.a
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+      <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons // no graphics have been created yet. This is purely a mockup. -->
@@ -44,20 +44,13 @@ find the code for a working prototype. send any questions or comments to kline.a
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			<a href="../index.html"><img class="span2" style="padding-bottom: 10px; padding-top: 10px;" src="../img/thwack.png" /></a>
+			<a href="../index.html"><img class="span3" style="padding-top: 10px;" src="../img/thwack.png" /></a>
 			
         <!--responsive web collapse-->
-		<div class="nav-collapse collapse container-fluid span8 pull-right" style="padding: 15px">
-		
-			
+		<div class="nav-collapse collapse container-fluid span8 pull-left" style="padding-top: 35px; padding-left: 3%;">
+
 			<!--pull-right section: containing search, login, create account-->
-			<ul class="nav pull-right">
-				<ul class="nav">
-					<!--searchbar-->
-					<form class="navbar-search">
-						<input type="text" class="search-query span4" placeholder="Search">
-					</form>
-				</ul>
+			<ul class="nav pull-right" style="padding-top: 10px;">
 				<li class="dropdown" id="login-dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
 						<ul class="span4 dropdown-menu">
@@ -69,13 +62,14 @@ find the code for a working prototype. send any questions or comments to kline.a
 								<br>
 							</form>
 						</ul>
+				
 				</li>
 				<li> <a href="#myModal" id="create-account"> Create Account</a></li><!-- corresponding modal code lives at the bottom of this script, for nesting issues at this time-->
-				
-				<!-- user is logged in, this drop down provides access to account logout and printable pdf -->
+			
+			<!-- user is logged in, this drop down provides access to account logout and printable pdf  **CURRENTLY THIS NEEDS SOME WORK WITH CSS AS IT IS NOT COMPLETELY CLICKABLE IN MOBILE VIEW** -->
 				<div class="dropdown pull-right" id="user-information">
 					<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon-user icon-white"></i> user@gmail.com</a>
-					<a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+					<a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#" ><span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Reading List<em> (PDF)</em></a></li>
 							<li class="divider"></li>
@@ -83,6 +77,76 @@ find the code for a working prototype. send any questions or comments to kline.a
 						</ul>
 						
 				</div>	
+				</ul>
+				
+
+			
+			<ul class="nav pull-right" style="padding-top: 10px;">
+				<ul class="nav">
+					<!--searchbar-->
+					<form class="navbar-search">
+						<input type="text" class="search-query span2" placeholder="Search">
+					</form>
+				</ul>
+				
+			</ul>
+			
+			
+			
+		<!-- top navigation (possibly) for site sections -->
+			<div class="btn-toolbar row pull-left" style="padding-top: 0px; padding-left: 20px;">
+				<div class="btn-group">
+					<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">
+						Genres
+						<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+							<!-- dropdown menu links -->
+							<li><a href="#">Science Fiction</a></li>
+							<li><a href="#">Super Heroes</a></li>
+							<li><a href="#">Additional Genre</a></li>
+							<li><a href="#">Additional Genre</a></li>
+							</ul>
+				</div>
+				
+				<div class="btn-group">
+					<a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+						Eras
+						<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+							<!-- dropdown menu links -->
+							<li><a href="#">Golden Era</a></li>
+							<li><a href="#">Additional Genre</a></li>
+							<li><a href="#">Additional Genre</a></li>
+							</ul>
+				</div>
+				
+				<div class="btn-group">
+					<a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
+						Publishers
+						<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+							<!-- dropdown menu links -->
+							<li><a href="#">DC Comics</a></li>
+							<li><a href="#">Marvel</a></li>
+							<li><a href="#">Additional Publisher</a></li>
+							</ul>
+				</div>
+				
+				<div class="btn-group">
+					<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+						Heroes
+						<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+							<!-- dropdown menu links -->
+							<li><a href="#">Directory</a></li>
+							</ul>
+				</div>
+			
+			</div>
 			</ul>
           </div><!--/.nav-collapse -->  		
         </div>
@@ -91,59 +155,9 @@ find the code for a working prototype. send any questions or comments to kline.a
 
 
  <!-- sidebar -->
- <div class="container-fluid">
+ <div class="container-fluid" style="padding-top: 40px;">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><a data-toggle="collapse" data-target="#genre-list">Genres</a></li>
-              <ul class="collapse out demo" id="genre-list">
-	              <li class="active"><a href="science-fiction.html">Science Fiction</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-              </ul>
-              <li class="nav-header"><a data-toggle="collapse" data-target="#era-list">Era / Time Period</a></li>
-              <ul class="collapse out demo" id="era-list">
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-              </ul>
-              <li class="nav-header"><a data-toggle="collapse" data-target="#publisher-list">Publisher</a></li>
-              <ul class="collapse out demo" id="publisher-list">
-	              <li class="active"><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-              </ul>
-              <li class="nav-header"><a data-toggle="collapse" data-target="#hero-list">Hero / Titles</a></li>
-              <ul class="collapse out demo" id="hero-list">
-	              <li class="active"><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-              </ul>
-            </ul>
-            
-          </div><!--/.well -->
-          
-          <!-- all links in the remainder of the sidebar will open in new tabs to encourage users to remain on site -->
-          <div class="well sidebar-nav">
-            <li class="nav-header"><a href="#">Goodreads</a></li>
-            <li class="nav-header"><a href="#">Comic Vine</a></li>
-            <li class="nav-header"><a href="#">Free Comic Book Day</a></li>
-            <li class="nav-header"><a href="#">Find your Local Comic Book Store</a></li>
-            <li class="nav-header"><a href="#">Find Books @ your local library</a></li>
-          </div><!--/.well-->
-          
-          <div class="well sidebar-nav">
-            <li class="nav-header"><a href="#">Help Fund or Contribute to this Project</a></li>
-            <li class="nav-header">Follow us on Social Media</li>
-          </div><!--/.well-->
-          
-        </div><!--/span-->
-    
+   
 
     <!-- Call to Action for Discovery  -->
 	  <!-- idea, when clicked, this div animates from span12, to span9- and reveals the side bar-->
@@ -245,6 +259,60 @@ With the advent of the Internet, a number of notable science fiction comics have
       </div>
 
       
+	  </div>
+	    
+		<div class="span3">
+           <div class="sidebar-nav">
+		   
+           <!-- The following code is for a sidebar-nav menu that is not currently being displayed
+		   <ul class="nav nav-list">
+              <li class="nav-header"><a data-toggle="collapse" data-target="#genre-list">Genres</a></li>
+              <ul class="collapse out demo" id="genre-list">
+	              <li class="active"><a href="genre/science-fiction.html">Science Fiction</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+              </ul>
+              <li class="nav-header"><a data-toggle="collapse" data-target="#era-list">Era / Time Period</a></li>
+              <ul class="collapse out demo" id="era-list">
+	              <li class="active"><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+              </ul>
+              <li class="nav-header"><a data-toggle="collapse" data-target="#publisher-list">Publisher</a></li>
+              <ul class="collapse out demo" id="publisher-list">
+	              <li class="active"><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+              </ul>
+              <li class="nav-header"><a data-toggle="collapse" data-target="#hero-list">Hero / Titles</a></li>
+              <ul class="collapse out demo" id="hero-list">
+	              <li class="active"><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+	              <li><a href="#">Link</a></li>
+              </ul>
+            </ul>
+            -->
+          </div><!--/.well 
+          
+          <!-- all links in the remainder of the sidebar will open in new tabs to encourage users to remain on site -->
+          <div class="well sidebar-nav">
+            <li class="nav-header"><a href="#"><img src="../img/goodreads-badge.png" /></a></li>
+            <li class="nav-header"><a href="#">Comic Vine</a></li>
+            <li class="nav-header"><a href="#">Free Comic Book Day</a></li>
+            <li class="nav-header"><a href="#">Find your Local Comic Book Store</a></li>
+            <li class="nav-header"><a href="#">Find Books @ your local library</a></li>
+          </div><!--/.well-->
+          
+          <div class="well sidebar-nav">
+            <li class="nav-header"><a href="#">Help Fund or Contribute to this Project</a></li>
+            <li class="nav-header">Follow us on Social Media</li>
+          </div><!--/.well-->
+		  
+	</div><!--/span-->
 	  </div>
 
       <hr>
